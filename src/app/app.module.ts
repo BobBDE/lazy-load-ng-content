@@ -8,7 +8,8 @@ import {ChildContentComponent} from './child-content/child-content.component';
 import {LazyCdkContainerComponent} from './lazy-cdk-container/lazy-cdk-container.component';
 import {PortalModule} from '@angular/cdk/portal';
 import {LazyContentDirective} from './lazy-content.directive';
-import { TemplateOutletContainerComponent } from './template-outlet-container/template-outlet-container.component';
+import {TemplateOutletContainerComponent} from './template-outlet-container/template-outlet-container.component';
+import {TemplateOutletContainerV2Component} from './template-outlet-container-v2/template-outlet-container-v2.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TemplateOutletContainerComponent } from './template-outlet-container/te
     ChildContentComponent,
     LazyCdkContainerComponent,
     LazyContentDirective,
-    TemplateOutletContainerComponent
+    TemplateOutletContainerComponent,
+    TemplateOutletContainerV2Component,
   ],
   imports: [
     BrowserModule,

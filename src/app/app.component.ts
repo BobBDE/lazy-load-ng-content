@@ -9,6 +9,7 @@ export class AppComponent {
 
   showFirstContent = false;
   showLazyTemplateOutletContent = false;
+  showLazyTemplateOutletContentV2 = false;
   showLazyCDKPortalContent = false;
 
   toggleFirstContent(): void {
@@ -17,6 +18,10 @@ export class AppComponent {
 
   toggleTemplateOutletContent(): void {
     this.showLazyTemplateOutletContent = !this.showLazyTemplateOutletContent;
+  }
+
+  toggleTemplateOutletContentV2(): void {
+    this.showLazyTemplateOutletContentV2 = !this.showLazyTemplateOutletContentV2;
   }
 
   toggleLazyMatContent(): void {

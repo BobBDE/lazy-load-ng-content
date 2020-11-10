@@ -12,8 +12,8 @@ export class LazyCdkContainerComponent implements OnInit,
 
   // tslint:disable-next-line:variable-name
   _showContent = false;
-  @Input() set showContent(isLoading: boolean) {
-    this._showContent = isLoading;
+  @Input() set showContent(showContent: boolean) {
+    this._showContent = showContent;
     this.lazyRender();
   }
 

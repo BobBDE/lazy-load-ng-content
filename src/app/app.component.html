@@ -31,6 +31,23 @@
 </div>
 
 
+<!-------------------------       NgTemplateOutlet  v2      ---------------------------->
+<div class="section">
+
+  <p>Content lazy loaded using ngTemplateOutlet</p>
+  <app-template-outlet-container-v2 [showContent]="showLazyTemplateOutletContentV2"
+                                 class="container">
+    <div *appLazyContent>
+      <app-child-content name="NgTemplateOutletV2"></app-child-content>
+    </div>
+  </app-template-outlet-container-v2>
+
+  <button type="button" (click)="toggleTemplateOutletContentV2()">
+    Toggle ng-content
+  </button>
+</div>
+
+
 <!-------------------------       CDK portal       ---------------------------->
 <div class="section">
   <p>Content lazy loaded using CDK portal</p>
